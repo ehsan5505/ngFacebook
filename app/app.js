@@ -3,10 +3,8 @@
 // Declare app level module which depends on views, and components
 angular.module('ess', [
   'ngRoute',
-  'ess.view1',
-  'ess.view2',
-  'ess.templates'
+  'ess.facebook'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/template'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
