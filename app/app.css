@@ -28,3 +28,7 @@
   content: "";
   padding: 0;
 }
+
+body>section{
+  min-height:600px;
+}

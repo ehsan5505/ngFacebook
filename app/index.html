@@ -4,129 +4,65 @@
 <!--[if IE 8]>         <html lang="en" ng-app="ess" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="ess" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ngFacebook App</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../bower_components/Materialize/dist/css/materialize.min.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="icon" href="facebook.png">
 </head>
 <body>
   
-  <!--<ul class="menu">-->
-  <!--  <li><a href="#/template">Template</a></li>-->
-  <!--  <li><a href="#/view1">View1</a></li>-->
-  <!--  <li><a href="#/view2">View2</a></li>-->
-  <!--</ul>-->
-
-  <nav class="blue darken-3">
-    <div class="nav-wrapper">
-      <a class="brand-logo">&nbsp; ngFacebook</a>
-    </div>
-  </nav>
-  <section class="container">
+  
+  <section>
+  
+  <div ng-view>
     
-  <!--<div ng-view></div>-->
-  <div class="row">
-    <aside class="col s4">
-      <h4>Please Login </h4>
-      <button class="btn blue darken-2 right">Login</button>
-      <br/><br/>
-      
-      <ul class="collection">
-        <li ><a class="black-text collection-item"><strong>ID:</strong> 121@2151421</a></li>
-        <li ><a class="black-text collection-item"><strong>First Name:</strong> Ehsan</a></li>
-        <li ><a class="black-text collection-item"><strong>Last Name:</strong> Rafeeque</a></li>
-        <li ><a class="black-text collection-item"><strong>Email:</strong> Email</a></li>
-        <li ><a class="black-text collection-item"><strong>Gender:</strong> M</a></li>
-        <li ><a class="black-text collection-item"><strong>Locale:</strong> enUS</a></li>
-        
-      </ul>
-      
+  </div>
+  
+  
+  
+  </section>
+  
+  <!-- footer -->
+  
+   <footer class="page-footer blue darken-2">
+    <div class="container">
       <div class="row">
-      <div class="col s12 m12">
-        <div class="card-panel blue">
-          <h5 class="white-text">Permission</h5>
-          <ul>
-            <li>Access to the database</li>
-            <li>Enable to CRUD</li>
-            <li>Sent Messages</li>
-          </ul>
+        <div class="col l6 s12">
+          <h5 class="white-text">ngSocial</h5>
+          <p class="grey-text text-lighten-4">Analysis and Measuring the System Performance</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <!--<h5 class="white-text">Links</h5>-->
+          <!--<ul>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>-->
+            <!--<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>-->
+          <!--</ul>-->
         </div>
       </div>
     </div>
-           
-    </aside>
-    
-    
-    <div class="col s1">&nbsp;</div>
-    
-    
-    <section class="col s7">
-      <h4>Here comes the status, comment and posts</h4>
-      
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix">mode_edit</i>
-              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-              <label for="icon_prefix2">Post on Wall</label>
-            </div>
-          </div>
-        </form>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">Expect More</a>
       </div>
-      <!--<div class="row">-->
-      <!--  <div class="card">-->
-          
-           <div class="row">
-            <div class="col s12 m12">
-              <div class="card blue darken">
-                <div class="card-content white-text">
-                  <span class="card-title">Comment that you say</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <!--<div class="card-action">-->
-                <!--  <a href="#">This is a link</a>-->
-                <!--  <a href="#">This is a link</a>-->
-                <!--</div>-->
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m12">
-              <div class="card blue darken">
-                <div class="card-content white-text">
-                  <span class="card-title">Comment that you say</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <!--<div class="card-action">-->
-                <!--  <a href="#">This is a link</a>-->
-                <!--  <a href="#">This is a link</a>-->
-                <!--</div>-->
-              </div>
-            </div>
-          </div>
-          
-      <!--  </div>-->
-      <!--</div>-->
-      
-      
-    </section>
-  </div>
-  </section>
+    </div>
+  </footer>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+  
+  
+  
+  
+  
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../bower_components/Materialize/dist/js/materialize.min.js"></script>
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
+  <script src="../bower_components/ng-facebook/ngFacebook.js"></script>
   <script src="facebook/facebook.js"></script>
+  <script src="app.js"></script>
   
 </body>
 </html>
